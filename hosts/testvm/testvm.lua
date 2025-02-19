@@ -10,9 +10,10 @@ configs = require("configs")
 cli = require("cli")
 development = require("development")
 
-local use_gnome = true
+local use_gnome = false
 local use_plasma = false
-local use_cosmic = false
+local use_cosmic = true
+local use_cinnamon = true
 
 return {
     repos = {
@@ -47,10 +48,10 @@ return {
     hardware = {
         -- pulseaudio = { enable = false },
 
-        sane = {
-            enable = true,
-            extra_packages = { "sane-airscan" },
-        },
+        -- sane = {
+        --     enable = true,
+        --     extra_packages = { "sane-airscan" },
+        -- },
 
         pipewire = {
             enable = true,
@@ -123,25 +124,25 @@ return {
                     deploy_config = true,
                 },
 
-                zsh = {
-                    enable = true,
-                    deploy_config = true,
-                    extra_packages = {
-                        -- "zsh-syntax-highlighting",
-                        "zsh-autosuggestions",
-                        "zsh-completions",
-                        -- "zsh-history-substring-search",
-                    }
-                    -- autosuggestion = true,
-                    -- enable_vfe_integration = true,
-                    -- default_keymap = "emacs",
+                -- zsh = {
+                --     enable = true,
+                --     deploy_config = true,
+                --     extra_packages = {
+                --         -- "zsh-syntax-highlighting",
+                --         "zsh-autosuggestions",
+                --         "zsh-completions",
+                --         -- "zsh-history-substring-search",
+                --     }
+                --     -- autosuggestion = true,
+                --     -- enable_vfe_integration = true,
+                --     -- default_keymap = "emacs",
 
-                    -- oh_my_zsh = {
-                    --     enable = true,
-                    --     plugins = {"sudo"},
-                    --     theme = "lukerandall"
-                    -- }
-                },
+                --     -- oh_my_zsh = {
+                --     --     enable = true,
+                --     --     plugins = {"sudo"},
+                --     --     theme = "lukerandall"
+                --     -- }
+                -- },
 
                 fish = {
                     enable = true,
@@ -214,6 +215,7 @@ return {
                     "aur:nordic-theme",
                     -- "aur:whitesur-gtk-theme-git",
                     "aur:whitesur-icon-theme-git",
+                    "flatpak:com.mattjakeman.ExtensionManager"
                 },
             },
     
@@ -228,6 +230,11 @@ return {
             cosmic = {
                 enable = use_cosmic,
                 display_manager = "cosmic-greeter",
+            },
+
+            cinnamon = {
+                enable = use_cinnamon;
+                -- display_manager = "gdm",
             },
         }
     },
@@ -269,7 +276,7 @@ return {
         "ghostty",
         -- "blueman", -- TODO: Maybe a better location is required
         -- AUR packages
-        "aur:visual-studio-code-bin",
+        -- "aur:visual-studio-code-bin",
         -- "aur:floorp-bin",
         -- "aur:mission-center",
         -- Flatpak packages
@@ -282,8 +289,8 @@ return {
 
         "firefox",
         -- "aur:brave-bin",
-        "vulkan-virtio",
-        "zed",
+        -- "vulkan-virtio",
+        -- "zed",
     });
     -- ..
     -- cli -- CLI tools
@@ -333,6 +340,37 @@ return {
                     -- Enable = "Source,Sink,Media,Socket",
                 -- },
             -- },
-        },
+        };
+
+        systemd = {
+            enable = false;
+            
+            mount = configs.mount({
+                data = {
+                    type = "cifs";
+                    what = "//mmserver.lan/NAS1";
+                    where = "/mnt/data";
+                    description = "MMserverNAS1";
+                    options = "vers=2.1,credentials=/etc/samba/mmserver-cred,iocharset=utf8,rw,x-systemd.automount,uid=1000";
+                    after = "network.target";
+                    wanted_by = "multi-user.target";
+                    automount = true;
+                    automount_config = "TimeoutIdleSec=0";
+                },
+
+                library = {
+                    type = "nfs";
+                    what = "homenas2.lan:/data/Documents";
+                    where = "/mnt/library/";
+                    description = "Document library";
+                    options = "noatime,x-systemd.automount,noauto";
+                    after = "network.target";
+                    wanted_by = "multi-user.target";
+                    automount = true;
+                    automount_config = "TimeoutIdleSec=600";
+                }
+            });
+        };
+
     }
 }
