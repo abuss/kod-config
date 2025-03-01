@@ -95,8 +95,7 @@ return {
 
         abuss = {
             name = "Antal Buss";
-            -- hashed_password = "$6$q5r7h6qJ8nRats.X$twRR8mUf5y/oKae4doeb6.aXhPhh4Z1ZcAz5RJG38MtPRpyFjuN8eCt9GW.a20yZK1O8OvVPtJusVHZ9I8Nk/.";
-            hashed_password = "$6$MOkGLOzXlj0lIE2d$5sxAysiDyD/7ZfntgZaN3vJ48t.BMi2qwPxqjgVxGXKXrNlFxRvnO8uCvOlHaGW2pVDrjt0JLNR9GWH.2YT5j.";
+            hashed_password = "$6$Eq5ptIHIBxcXb6MP$DOGtkoN2ZqsU4vQnEvrMNQlk0fdBRcEW4OWEjoU6BS1P0fgU44TATHEpMXFAKBx6MfvazWWUci6YDoMuq6eHM/";
             shell = "/usr/bin/fish";
             extra_groups = map({ "audio", "input", "users", "video", "wheel" }); -- .. if_true(use_virtualization, { "docker", "podman", "libvirt" });
             openssh_authorized = {
