@@ -115,7 +115,7 @@ return {
                     config = configs.git({
                         user_name = "Antal Buss",
                         user_email = "antal.buss@gmail.com",
-                        coere_editor = "nvim",
+                        core_editor = "nvim",
                     })
                 };
 
