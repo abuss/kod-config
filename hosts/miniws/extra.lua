@@ -5,4 +5,5 @@ return list({
     "flatpak:org.gnome.Firmware",
     "flatpak:com.github.johnfactotum.Foliate",
     "flatpak:com.calibre_ebook.calibre",
+    "aur:microsoft-edge-stable-bin",
 })
