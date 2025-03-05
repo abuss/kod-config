@@ -19,7 +19,7 @@ return {
   "python",
   "uv",
   "ruff",
-  -- "pyright",
+  "pyright",
   -- "python-lsp-server",
 
   -- Tools

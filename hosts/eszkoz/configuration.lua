@@ -153,6 +153,11 @@ return {
           deploy_config = true,
         },
 
+        helix = {
+          enable = true,
+          deploy_config = true,
+        },
+
         emacs = {
           enable = true,
           package = "emacs-wayland",
