@@ -30,4 +30,5 @@ return list({
   -- pandoc
   "github-cli",   -- Github client
   -- "helix",
+  "tmux",
 })

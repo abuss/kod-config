@@ -27,7 +27,9 @@ return {
       'status-icons@gnome-shell-extensions.gcampax.github.com',
       'user-theme@gnome-shell-extensions.gcampax.github.com',
       'workspace-indicator@gnome-shell-extensions.gcampax.github.com',
-      -- 'monitor@astraext.github.io'
+      -- 'monitor@astraext.github.io',
+      'monitor@astraext.github.io',
+      'weatheroclock@CleoMenezesJr.github.io'
     },
   },
 
@@ -76,7 +78,7 @@ return {
     custom_keybinding = {
       ['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/'] = {
         binding = '<Control><Alt>t',
-        command = "kgx",
+        command = "ghostty",
         name = "Terminal",
       },
     },

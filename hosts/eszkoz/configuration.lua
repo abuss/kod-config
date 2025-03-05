@@ -174,6 +174,7 @@ return {
       deploy_configs = {
         "home",         -- General config for home directory (face, background, etc.)
         "gtk",          -- GTK themes
+        "ghostty",
       },
 
       services = {
