@@ -6,10 +6,13 @@ return {
     "cmake",
     "make",
     "ninja",
+    "clang",
+    "lldb",
 
     "rustup",
     
     "lua",
+    "lua-language-server",
     
     "go",
     
@@ -17,6 +20,7 @@ return {
     "uv",
     "ruff",
     "poetry",
+    "pyright",
     
     -- Tools
     "gitg",

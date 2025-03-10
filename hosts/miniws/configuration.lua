@@ -156,7 +156,10 @@ return {
                     package = "emacs-wayland";
                     deploy_config = true;
                 };
-
+		helix = {
+                    enable = true;
+                    deploy_config = true;
+                },
                 -- Gnome dconf configuration
                 dconf = {
                     enable = use_gnome;
@@ -167,6 +170,7 @@ return {
             deploy_configs = {
                 "home", -- General config for home directory (face, background, etc.)
                 "gtk", -- GTK themes
+                "ghostty",
             };
 
             services = {
@@ -208,6 +212,7 @@ return {
                     "aur:gnome-shell-extension-blur-my-shell",
                     "aur:gnome-shell-extension-arc-menu-git",
                     "aur:gnome-shell-extension-gsconnect",
+                    "gnome-shell-extension-weather-oclock",
                     "aur:nordic-theme",
                     "aur:whitesur-gtk-theme-git",
                     "aur:whitesur-icon-theme-git",
@@ -264,6 +269,7 @@ return {
         "neovim",
         "htop",
         "libgtop",
+	"power-profiles-daemon",
         "git",
         "neofetch",
         "ghostty",
@@ -273,6 +279,7 @@ return {
         "aur:floorp-bin",
         -- "aur:mission-center",
         -- Flatpak packages
+        -- "flatpak:com.mattjakeman.ExtensionManager",
         -- "flatpak:com.visualstudio.code",
         "distrobox",
         "podman",
@@ -317,15 +324,15 @@ return {
             }
         };
     
-        -- avahi = {
-        --     enable = true,
+        avahi = {
+           enable = true,
         --     nssmdns = true,
         --     publish = {
         --         enable = true,
         --         domain = true,
         --         userServices = true
         --     },
-        -- },
+        },
     
         cups = {
             enable = true,
