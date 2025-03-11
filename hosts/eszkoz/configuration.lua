@@ -5,6 +5,7 @@ print("Eszkoz configuration")
 disk = require("disk")
 repos = require("repos")
 configs = require("configs")
+themes = require("modules/themes")
 
 -- Extra packages
 cli = require("cli")
@@ -189,9 +190,18 @@ return {
       },
 
       home = map({
-        [".config/background"] = copy_file("background"),
-        [".face"] = copy_file("face.jpg"),
+        colloid_theme = themes({
+          repo_url = "https://github.com/vinceliuice/Colloid-gtk-theme.git";
+          tweaks = "normal";
+        }),
 
+        colloid_icon_theme = themes({
+          repo_url = "https://github.com/vinceliuice/Colloid-icon-theme.git";
+          scheme = "nord";
+        }),
+
+        -- [".config/background"] = copy_file("background"),
+        -- [".face"] = copy_file("face.jpg"),
       })
     },
   },
@@ -217,9 +227,9 @@ return {
           "aur:gnome-shell-extension-arc-menu-git",
           "aur:gnome-shell-extension-gsconnect",
           "gnome-shell-extension-weather-oclock",
-          "aur:nordic-theme",
-          "aur:whitesur-gtk-theme-git",
-          "aur:whitesur-icon-theme-git",
+          -- "aur:nordic-theme",
+          -- "aur:whitesur-gtk-theme-git",
+          -- "aur:whitesur-icon-theme-git",
           "flatpak:com.mattjakeman.ExtensionManager"
         },
       },
@@ -333,15 +343,15 @@ return {
       }
     },
 
-    -- avahi = {
-    --     enable = true,
+    avahi = {
+      enable = true,
     --     nssmdns = true,
     --     publish = {
     --         enable = true,
     --         domain = true,
     --         userServices = true
     --     },
-    -- },
+    },
 
     cups = {
       enable = true,
