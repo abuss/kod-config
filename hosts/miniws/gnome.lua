@@ -26,7 +26,8 @@ return {
             'status-icons@gnome-shell-extensions.gcampax.github.com',
             'user-theme@gnome-shell-extensions.gcampax.github.com',
             'workspace-indicator@gnome-shell-extensions.gcampax.github.com',
-            -- 'monitor@astraext.github.io'
+            'monitor@astraext.github.io',
+            'weatheroclock@CleoMenezesJr.github.io'
         },
     },
 
