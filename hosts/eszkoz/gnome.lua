@@ -38,10 +38,11 @@ return {
     cursor_theme = "Adwaita",
     font_antialiasing = "rgba",
     font_hinting = "slight",
-    --     font_name = "Work Sans 11";
-    gtk_theme = "Adwaita-dark",
-    --     icon_theme = "ePapirus-Dark";
-    icon_theme = 'WhiteSur-dark',
+    -- font_name = "Work Sans 11";
+    -- gtk_theme = "Adwaita-dark",
+    gtk_theme = "Colloid-Dark",
+    -- icon_theme = 'WhiteSur-dark',
+    icon_theme = 'Colloid-nordic',
     show_battery_percentage = true,
   },
 

@@ -14,7 +14,7 @@ extra = require("extra")
 
 local use_gnome = true
 local use_plasma = false
-local use_cosmic = false
+local use_cosmic = true
 local use_cinnamon = false
 
 return {
@@ -289,7 +289,8 @@ return {
         -- "python-invoke",
         "git",
         -- "poetry",
-        "neofetch",
+        -- "neofetch",
+        "fastfetch",
         "helix",
         "ghostty",
         -- "blueman", -- TODO: Maybe a better location is required

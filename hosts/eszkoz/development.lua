@@ -17,6 +17,7 @@ return {
   "go",
 
   "python",
+  "python313-freethreaded",
   "uv",
   "ruff",
   "pyright",
