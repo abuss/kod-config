@@ -10,4 +10,6 @@ return list({
   -- "aur:colloid-icon-theme-git",
   "aur:ms-365-electron-bin",
   -- "aur:deskreen-bin",
+  "aur:breezy-desktop-gnome-git",
+  -- "nix",
 })

@@ -191,13 +191,15 @@ return {
 
       home = map({
         colloid_theme = themes({
-          repo_url = "https://github.com/vinceliuice/Colloid-gtk-theme.git";
-          tweaks = "normal";
+          -- repo_url = "https://github.com/vinceliuice/Colloid-gtk-theme.git";
+          repo_url = "https://github.com/vinceliuice/WhiteSur-gtk-theme.git";
+          -- tweaks = "normal";
         }),
 
         colloid_icon_theme = themes({
-          repo_url = "https://github.com/vinceliuice/Colloid-icon-theme.git";
-          scheme = "nord";
+          -- repo_url = "https://github.com/vinceliuice/Colloid-icon-theme.git";
+          repo_url = "https://github.com/vinceliuice/WhiteSur-icon-theme.git";
+          -- scheme = "nord";
         }),
 
         -- [".config/background"] = copy_file("background"),
@@ -290,7 +292,7 @@ return {
         "git",
         -- "poetry",
         -- "neofetch",
-        "fastfetch",
+        -- "fastfetch",
         "helix",
         "ghostty",
         -- "blueman", -- TODO: Maybe a better location is required
@@ -305,10 +307,12 @@ return {
         "podman",
         "aur:quickemu",
         "qemu-desktop",
+        "spice-gtk",
         "aur:uxplay",
         "aur:megasync-bin",
 
         "firefox",
+        "thunderbird",
         "aur:brave-bin",
         "aur:zen-browser-bin",
 
@@ -335,6 +339,11 @@ return {
       enable = true,
       service_name = "NetworkManager",
     },
+
+    nix = {
+      enable = true;
+      service_name = "nix_daemon";
+    };
 
     openssh = {
       enable = true,
