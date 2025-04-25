@@ -157,6 +157,7 @@ return {
         helix = {
           enable = true,
           deploy_config = true,
+          package = "aur:evil-helix-bin",
         },
 
         emacs = {
@@ -293,7 +294,7 @@ return {
         -- "poetry",
         -- "neofetch",
         -- "fastfetch",
-        "helix",
+        -- "helix",
         "ghostty",
         -- "blueman", -- TODO: Maybe a better location is required
         -- AUR packages
@@ -310,6 +311,7 @@ return {
         "spice-gtk",
         "aur:uxplay",
         "aur:megasync-bin",
+        "remmina",
 
         "firefox",
         "thunderbird",

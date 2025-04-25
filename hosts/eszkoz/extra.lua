@@ -11,5 +11,8 @@ return list({
   "aur:ms-365-electron-bin",
   -- "aur:deskreen-bin",
   "aur:breezy-desktop-gnome-git",
+  "org.gnome.World.Citations",
+  "rocks.shy.VacuumTube",
+  "net.nokyan.Resources",
   -- "nix",
 })

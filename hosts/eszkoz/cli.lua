@@ -14,7 +14,8 @@ return list({
   "lazygit",     -- Terminal Git client
   "lurk",        -- Modern Unix `strace`
   -- "aur:moar-bin", -- Modern Unix `less`
-  "neofetch",    -- Terminal system info
+  -- "neofetch",    -- Terminal system info
+  "fastfetch",
   -- nurl # Nix URL fetcher
   -- ripgrep # Modern Unix `grep`
   "tldr",   -- Modern Unix `man`

@@ -29,8 +29,9 @@ return {
 
   -- Editors
   -- "neovim",
-  "lite-xl",
+  -- "lite-xl",
   "emacs-wayland",
   "zed",
 
+  "obsidian",
 }
