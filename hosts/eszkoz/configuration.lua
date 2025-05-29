@@ -18,6 +18,7 @@ local use_cosmic = true
 local use_cinnamon = false
 
 return {
+  base_distribution = "arch";
   repos = {
     official = repos.arch_repo("https://mirror.rackspace.com/archlinux"),
     aur = repos.aur_repo("yay", "https://aur.archlinux.org/yay-bin.git"),
@@ -312,6 +313,7 @@ return {
         "aur:uxplay",
         "aur:megasync-bin",
         "remmina",
+        "papers",
 
         "firefox",
         "thunderbird",
