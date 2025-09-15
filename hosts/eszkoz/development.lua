@@ -1,37 +1,43 @@
 -- Develop packages
 
 return {
-  -- Languages
-  "gcc",
-  "cmake",
-  "make",
-  "ninja",
-  "clang",
-  "lldb",
+	-- Languages
+	"gcc",
+	"cmake",
+	"make",
+	"ninja",
+	"clang",
+	"lldb",
 
-  "rustup",
+	"rustup",
 
-  "lua",
-  "lua-language-server",
+	"lua",
+	"lua-language-server",
 
-  "go",
+	"npm",
+	"go",
 
-  "python",
-  "python313-freethreaded",
-  "uv",
-  "ruff",
-  "pyright",
-  -- "python-lsp-server",
+	"python",
+	"python313-freethreaded",
+	"uv",
+	"ruff",
+	"pyright",
+	"python-lsp-server",
 
-  -- Tools
-  "gitg",
-  "meld",
+	"zig",
 
-  -- Editors
-  -- "neovim",
-  -- "lite-xl",
-  "emacs-wayland",
-  "zed",
+	-- Tools
+	"gitg",
+	"meld",
 
-  "obsidian",
+	-- Editors
+	-- "neovim",
+	-- "lite-xl",
+	"emacs-wayland",
+	"zed",
+
+	-- "obsidian",
+	"typst",
+
+    "jujutsu",
 }
