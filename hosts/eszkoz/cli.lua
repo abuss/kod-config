@@ -33,4 +33,5 @@ return list({
 	"tmux",
 	"yazi",
 	"zellij",
+    "lazyjj",
 })

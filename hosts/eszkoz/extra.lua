@@ -15,8 +15,9 @@ return list({
 	"flatpak:org.gnome.World.Citations",
 	"flatpak:rocks.shy.VacuumTube",
 	"flatpak:net.nokyan.Resources",
-	-- "flatpak:org.zotero.Zotero",
+	"flatpak:md.obsidian.Obsidian",
 	-- "aur:ulauncher",
 	-- "nix",
 	"aur:opencode-bin",
+	"aur:seafile-client",
 })
