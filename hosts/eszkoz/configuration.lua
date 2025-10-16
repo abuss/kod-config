@@ -225,6 +225,8 @@ return {
 				},
 				extra_packages = {
 					"gnome-tweaks",
+					"showtime",
+					"gnome-connections",
 					-- "gnome-extra",
 					-- "gnome-themes-extra",
 					"gnome-shell-extension-appindicator",

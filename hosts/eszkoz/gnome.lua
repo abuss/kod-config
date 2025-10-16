@@ -29,7 +29,8 @@ return {
       'workspace-indicator@gnome-shell-extensions.gcampax.github.com',
       -- 'monitor@astraext.github.io',
       'monitor@astraext.github.io',
-      'weatheroclock@CleoMenezesJr.github.io'
+      'weatheroclock@CleoMenezesJr.github.io',
+      'tailscale@joaophi.github.com',
     },
   },
 

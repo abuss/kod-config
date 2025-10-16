@@ -9,7 +9,7 @@ return list({
 	-- "aur:colloid-gtk-theme-git",
 	-- "aur:colloid-icon-theme-git",
 	"aur:ms-365-electron-bin",
-	"aur:trayscale",
+	-- "aur:trayscale",
 	-- "aur:deskreen-bin",
 	"aur:breezy-desktop-gnome-git",
 	"flatpak:org.gnome.World.Citations",
@@ -19,5 +19,6 @@ return list({
 	-- "aur:ulauncher",
 	-- "nix",
 	"aur:opencode-bin",
-	"aur:seafile-client",
+	-- "aur:seafile-client",
+	-- "nextcloud-client",
 })

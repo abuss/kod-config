@@ -12,7 +12,7 @@ return list({
 	"hyperfine", -- Terminal benchmarking
 	-- jiq # Modern Unix `jq`
 	"lazygit", -- Terminal Git client
-	"lurk", -- Modern Unix `strace`
+	-- "lurk", -- Modern Unix `strace`
 	-- "aur:moar-bin", -- Modern Unix `less`
 	-- "neofetch",    -- Terminal system info
 	"fastfetch",
@@ -27,11 +27,11 @@ return list({
 	"lsd",
 	"btop",
 	"zoxide",
-	-- "wezterm",
+	"wezterm",
 	-- pandoc
 	"github-cli", -- Github client
 	"tmux",
 	"yazi",
 	"zellij",
-    "lazyjj",
+    -- "lazyjj",
 })
