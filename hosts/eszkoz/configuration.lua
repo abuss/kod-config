@@ -126,28 +126,28 @@ return {
 				},
 
 				starship = {
-					enable = true;
-					deploy_config = true;
+					enable = true,
+					deploy_config = true,
 				},
 
 				fish = {
-					enable = true;
+					enable = true,
 				},
 
 				zsh = {
-				    enable = true;
-				    deploy_config = true;
-				    -- extra_packages = {
-				    	-- "aur:zinit",
-				--         -- "zsh-syntax-highlighting",
-				--         "zsh-autosuggestions",
-				--         "zsh-completions",
-				--         -- "zsh-history-substring-search",
-				    -- };
-				--     -- autosuggestion = true,
-				--     -- enable_vfe_integration = true,
-				--     -- default_keymap = "emacs",
-				};
+					enable = true,
+					deploy_config = true,
+					-- extra_packages = {
+					-- "aur:zinit",
+					--         -- "zsh-syntax-highlighting",
+					--         "zsh-autosuggestions",
+					--         "zsh-completions",
+					--         -- "zsh-history-substring-search",
+					-- };
+					--     -- autosuggestion = true,
+					--     -- enable_vfe_integration = true,
+					--     -- default_keymap = "emacs",
+				},
 
 				neovim = {
 					enable = true,
@@ -162,10 +162,10 @@ return {
 
 				emacs = {
 					enable = true,
-					package = "emacs-wayland";
+					package = "emacs-wayland",
 					-- package = "aur:emacs-pgtk-igc-git",
-					deploy_config = true;
-                    extra_packages = { "aspell", "aspell-en" };
+					deploy_config = true,
+					extra_packages = { "aspell", "aspell-en" },
 				},
 
 				-- Gnome dconf configuration
@@ -215,10 +215,11 @@ return {
 		-- display_manager = "gdm",
 		-- display_manager = "sddm",
 		-- display_manager = "lightdm",
+		display_manager = "cosmic-greeter",
 		desktop_manager = {
 			gnome = {
 				enable = use_gnome,
-				display_manager = "gdm",
+				-- display_manager = "gdm",
 				exclude_packages = {
 					"gnome-tour",
 					"yelp",
@@ -262,7 +263,7 @@ return {
 				extra_packages = {
 					"lightdm-gtk-greeter",
 					"network-manager-applet",
-				}
+				},
 			},
 			cinnamon = {
 				enable = use_cinnamon,
@@ -307,14 +308,18 @@ return {
 		-- "blueman", -- TODO: Maybe a better location is required
 		-- AUR packages
 		"aur:visual-studio-code-bin",
-		"aur:opera",
+		-- "aur:opera",
 		-- Flatpak packages
 		-- "flatpak:com.mattjakeman.ExtensionManager",
 		-- "flatpak:com.visualstudio.code",
 		"distrobox",
 		"podman",
+		"podman-compose",
+		"podman-docker",
 		"aur:quickemu",
 		"qemu-desktop",
+		"libvirt",
+		"dnsmasq",
 		"spice-gtk",
 		"aur:uxplay",
 		"aur:megasync-bin",
@@ -322,13 +327,15 @@ return {
 		"papers",
 
 		"firefox",
-		"thunderbird",
+		--"thunderbird",
 		"aur:brave-bin",
-		"aur:zen-browser-bin",
+		-- "aur:zen-browser-bin",
+		"vivaldi",
+		"vivaldi-ffmpeg-codecs",
 
-		"freecad",
-		"openscad",
-		"prusa-slicer",
+		-- "freecad",
+		-- "openscad",
+		-- "prusa-slicer",
 	})
 		.. cli -- CLI tools
 		.. development -- Development tools

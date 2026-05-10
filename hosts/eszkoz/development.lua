@@ -18,7 +18,7 @@ return {
 	"go",
 
 	"python",
-	"python313-freethreaded",
+	"python314-freethreaded",
 	"uv",
 	"ruff",
 	"pyright",
@@ -37,7 +37,7 @@ return {
 	"zed",
 
 	-- "obsidian",
-	"typst",
+	-- "typst",
 
-    "jujutsu",
+	-- "jujutsu",
 }
